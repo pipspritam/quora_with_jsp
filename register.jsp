@@ -1,4 +1,4 @@
-
+<%@ include file="navbar.jsp" %>
 <html>
     <head>
         <title>new_registration</title>

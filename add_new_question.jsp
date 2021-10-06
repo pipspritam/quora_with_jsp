@@ -17,8 +17,10 @@
         String subject = request.getParameter("subject");
         String question = request.getParameter("question");
         String qid = get_question_id(subject, email);
+        String ask_date = java.time.LocalDate.now().toString();
+        String ask_time = java.time.LocalTime.now().toString();
         Statement stmt=con.createStatement();
-        int i=stmt.executeUpdate("insert into questions values ('"+qid+"','"+subject+"','"+question+"')");
+        int i=stmt.executeUpdate("insert into questions values ('"+qid+"','"+subject+"','"+question+"','"+email+"','"+ask_date+"','"+ask_time+"')");
         response.sendRedirect("./home.jsp");
 
     }
