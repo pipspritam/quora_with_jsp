@@ -12,7 +12,7 @@
     <ul>
         <li><a href="./home.jsp">Home</a></li>
         <li><a href="./ask_question.jsp">Ask A Question</a></li>
-        <li><a href="./answer.jsp">Answer</a></li>
+        <li><a href="./answer.jsp">Not Yet Answered</a></li>
         <li><a href="./stat.jsp">Stats</a></li>
         <li><a href="./account.jsp"><%= name.split(" ", 0)[0] %></a></li>
       </ul>
@@ -20,7 +20,7 @@
         <ul>
             <li><a href="./home.jsp">Home</a></li>
             <li><a href="./login.jsp">Ask A Question</a></li>
-            <li><a href="./login.jsp">Answer</a></li>
+            <li><a href="./login.jsp">Not Yet Answered</a></li>
             <li><a href="./login.jsp">Stats</a></li>
             <li><a href="./login.jsp">Login</a></li>
           </ul>

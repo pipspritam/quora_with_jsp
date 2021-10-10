@@ -6,7 +6,7 @@
         <%
             try{
                 Statement stmt=con.createStatement(); 
-                ResultSet rs=stmt.executeQuery("select * from questions");
+                ResultSet rs=stmt.executeQuery("select * from questions where qid in (select qid from quora_answers)");
                 while(rs.next())
                 { %>
                     
